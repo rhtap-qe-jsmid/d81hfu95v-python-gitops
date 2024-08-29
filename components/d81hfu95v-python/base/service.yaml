@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: d81hfu95v-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: d81hfu95v-python 
+  name: d81hfu95v-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: d81hfu95v-python 
